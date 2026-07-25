@@ -1,0 +1,6 @@
+1. On Day 1 I layed out the basic idea for the homepage and built the html and css for the homepage.
+2. Configured the JS: preventdefault of the browser refreshing, and console.log to print the user's exercise, weight, sets, reps.
+3. I used DOM manipulation to not just log the user's inputs but to display them back on the page, I also experimented
+using form.reset(), not deleting the form but just adding it to another section. I also noticed I am seeing some JS
+patterns more clearer because I have done it before it just flows more naturally.
+4. State Management

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Express Tracker App</title>
+</head>
+<body>
+    <div class="whole-container">
+        <h1 class="first-bigtext">Expense Tracker</h1>
+        <div class="green-container">
+            <h3 class="balance-h3">Your Balance</h3>
+            <h2 class="balance-h2">$0.00</h2>
+            <div class="divider">
+                <div class="white-box income-div">
+                    <p class="income-div-text">Income</p>
+                    <p class="income-div-amount">$0.00</p>
+                </div>
+                <div class="white-box expenses-div">
+                    <p class="expenses-div-text">Expenses</p>
+                    <p class="expenses-div-amount">$0.00</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="transaction-form-divider">
+            <div class="transaction-div">
+                <h2 class="transactions-h2">Transactions</h2>
+                <ul id="transaction-list">
+                    <li>
+                        <div class="list-div">Airpods</div>
+                    </li>
+                    <li>
+                        <div class="list-div">Sneakers</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="form-div">
+                <h3 class="form-h3">Add Transaction</h3>
+                <form action="/">
+                    <label for="fname" id="first-label">Description:</label><br>
+                    <input type="text" id="dname" name="fname"><br>
+                    <label for="lname" id="second-label">Amount:</label><br>
+                    <input type="text" id="ename" name="lname"><br>
+                    <p id="under-form-p">use negative[-] for expenses</p>
+
+
+                    <input type="submit" value="Add" id="submit-button">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js" charset="utf-8"></script> 
+</body>
+</html>

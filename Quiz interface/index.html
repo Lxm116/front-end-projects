@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="active" id="first-page">
+        <h1 class="first-page-h1">Quiz Time</h1>
+        <p class="first-page-p">Test your knowledge with these fun questions.</p>
+        <button class="first-page-button">Start Now</button>
+
+    </div>
+
+    <div class="inactive" id="second-page">
+        <h2 class="second-page-h2">What is the chemical symbol for Gold?</h2>
+        <div class="question-tracker">
+            <p>Question <span class="question-count">1</span> of 5</p>
+            <p>Score:<span class="score-count">0</span></p>
+        </div>
+        <div class="answers">
+            <button class="option answer-box A"><p class="answer-p answer-a">Cu</p></button>
+            <button class="option answer-box B"><p class="answer-p answer-b">Ag</p></button>
+            <button class="option answer-box the-answer C"><p class="answer-p answer-c">Au</p></button>
+            <button class="option answer-box D"><p class="answer-p answer-d">Fe</p></button>
+        </div>
+        <div class="time-traversers">
+            <button class="arrow prev">Previous</button>
+            <button class="arrow next">Next</button>
+        </div>
+        <div class="progress-bar">
+            <div class="bar inner-progress-bar"></div>
+        </div>
+
+    </div>
+
+    <div class="inactive" id="third-page">
+        <h1 class="third-page-h1">Quiz results</h1>
+        <div class="conditional-statements">
+            <p class="score-conditional-p">You scored <span class="score-conditional">0</span> out of 5</p>
+            <p class="advice-conditional">Good Job!</p>
+        </div>
+        <button class="restart-button">Restart Quiz</button>
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>

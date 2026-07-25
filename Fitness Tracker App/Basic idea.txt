@@ -1,0 +1,14 @@
+THE FITNESS TRACKER APP
+motto: Progress is progress no matter how small(or something that hints at progressive overload)
+
+- Homepage
+-- Choose your exercise(should the user type it in or choose from a list of exercises?)
+--- What was the weight you used(KG or LB)(User should definitely type it in)
+---- How many sets(User is definitely typing this in)
+----- How many reps?(User is definitely typing this in)
+------ Automatically add date for the user
+------ LOG TO DATABASE
+
+- View my progress
+-- Show the user his logged workouts and dates to accompany it
+

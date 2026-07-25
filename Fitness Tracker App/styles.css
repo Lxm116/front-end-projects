@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin: 30px 0;
+}
+
+header > p {
+    margin-top: 5px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 350px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input:focus {
+    outline-color: blue;
+}
+
+#workout-history {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.workout-card {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    transition: transform 0.2s ease;
+}
+
+.workout-card:hover {
+    transform: translateY(-4px);
+}
+
+.workout-card h4:first-child {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.workout-card h4:last-of-type {
+    font-size: 1.3rem;
+}
+
+.workout-card p {
+    margin: 8px 0;
+}
+
+#history-title {
+    margin-top: 20px;
+}
+
+.delete-btn {
+    margin-top: auto;
+    align-self: flex-end;
+
+    border: none;
+    background: crimson;
+    color: white;
+
+    padding: 14px 14px;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+
+.switch-button {
+    margin-top: 20px;
+    width: 350px;
+}

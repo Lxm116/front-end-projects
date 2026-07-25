@@ -1,0 +1,33 @@
+fitness-tracker/
+│
+├── package.json
+├── .gitignore
+├── server.js
+│
+├── public/
+│   ├── index.html
+│   ├── progress.html
+│   │
+│   ├── css/
+│   │     └── styles.css
+│   │
+│   ├── js/
+│   │     ├── app.js
+│   │     └── progress.js
+│   │
+│   └── images/
+│
+├── routes/
+│     └── workouts.js
+│
+├── controllers/
+│     └── workoutsController.js
+│
+├── models/
+│     └── workoutModel.js
+│
+├── database/
+│     ├── db.js
+│     └── schema.sql
+│
+└── node_modules/

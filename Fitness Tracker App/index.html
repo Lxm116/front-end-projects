@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link href="./styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <h1>FITNESS TRACKER</h1>
+        <p>The key is progressive overload</p>
+    </header>
+
+    <main id="main">
+        <form action="#" method="post" id="exercise-form">
+            <div class="form-group"> <!-- The addition of this div with class: form-group enables me to target each segment in my form as one in my css-->
+                <label for="exercise">Exercise:</label>
+                <select name="exercise" id="exercise">
+                    <option value="">--Please choose an exercise--</option>
+                    <option value="bench-press">Bench Press</option>
+                    <option value="squat">Squat</option>
+                    <option value="deadlift">Deadlift</option>
+                    <option value="overhead-press">Overhead Press</option>
+                    <option value="lat-pulldown">Lat Pulldown</option>
+                    <option value="dumbbell-curl">Dumbbell Curl</option>
+                    <option value="pull-up">Pull-up</option>
+                    <option value="leg-curl">Leg Curl</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="weight">Weight(kg):</label>
+                <input type="number" name="weight" id="weight" step="0.5"  min="0" required />
+            </div>
+            
+            <div class="form-group">
+                <label for="sets">Sets:</label>
+                <input type="number" name="sets" id="sets" min="1" required />
+            </div>
+
+
+            <div class="form-group">
+                <label for="reps">Reps:</label>
+                <input type="number" name="reps" id="reps"  min="1" required />
+            </div>
+
+            <button type="submit" class="save-button">Save Workout</button>
+        </form>
+        <a href="./progress.html"><button class="switch-button">Switch to Progress Page</button></a>
+    </main>
+
+    <footer></footer>
+    <script src="./index.js" ></script>
+</body>
+</html>
